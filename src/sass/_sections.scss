@@ -3,10 +3,12 @@
   padding-bottom: 50px;
 
   &__title {
-    font-family: $bold-font;
-    font-weight: bold;
-    font-size: 36px;
-    line-height: 49px;
+    font-family: $light-font;
+    font-weight: 100;
+    font-size: 40px;
+    line-height: 59px;
+    text-align: center;
+    text-transform: uppercase;
   }
 
   &__subtitle {
@@ -234,9 +236,6 @@
   }
 }
 
-
-
-
 // СЕКЦИЯ: Цытата
 .quotation {
   background-color: #fff;
@@ -258,5 +257,56 @@
   .author {
     margin-left: auto;
     margin-right: auto;
+  }
+}
+
+// СЕКЦИЯ: Новости
+.news {
+
+  &__list {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  &__item {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    height: 370px;
+    text-align: center;
+
+    &:not(:first-child) {
+      margin-left: 30px;
+    }
+  }
+
+  // &__info{
+
+  // }
+  &__thumb {
+    width: 200px;
+    height: auto;
+    border-radius: 50%;
+  }
+
+  &__title {
+    margin-top: 20px;
+    font-size: 18px;
+    line-height: 20px;
+    color: #222;
+    font-weight: bold;
+  }
+
+  &__link {
+    margin-top: 15px;
+    padding: 5px 15px;
+    border: 1px solid $accent-color;
+    border-radius: 33px;
+
+    &:hover {
+      color: #fff;
+      background-color: $accent-color;
+    }
   }
 }

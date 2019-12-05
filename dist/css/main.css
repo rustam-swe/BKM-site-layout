@@ -297,10 +297,6 @@ h1 {
   .author__position {
     grid-area: author-position; }
 
-.section {
-  padding-top: 50px;
-  padding-bottom: 50px; }
-
 .header {
   width: 100%;
   background-color: #fff;
@@ -388,10 +384,12 @@ h1 {
   padding-top: 50px;
   padding-bottom: 50px; }
   .section__title {
-    font-family: Circe-Bold;
-    font-weight: bold;
-    font-size: 36px;
-    line-height: 49px; }
+    font-family: Circe-Light;
+    font-weight: 100;
+    font-size: 40px;
+    line-height: 59px;
+    text-align: center;
+    text-transform: uppercase; }
   .section__subtitle {
     font-weight: normal;
     margin-top: 25px;
@@ -543,6 +541,41 @@ h1 {
   .quotation .author {
     margin-left: auto;
     margin-right: auto; }
+
+.news__list {
+  display: flex;
+  justify-content: space-between; }
+
+.news__item {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  height: 370px;
+  text-align: center; }
+  .news__item:not(:first-child) {
+    margin-left: 30px; }
+
+.news__thumb {
+  width: 200px;
+  height: auto;
+  border-radius: 50%; }
+
+.news__title {
+  margin-top: 20px;
+  font-size: 18px;
+  line-height: 20px;
+  color: #222;
+  font-weight: bold; }
+
+.news__link {
+  margin-top: 15px;
+  padding: 5px 15px;
+  border: 1px solid #0DAF4B;
+  border-radius: 33px; }
+  .news__link:hover {
+    color: #fff;
+    background-color: #0DAF4B; }
 
 .footer {
   padding-top: 15px;
