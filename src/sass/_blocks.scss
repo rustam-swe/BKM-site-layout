@@ -83,25 +83,12 @@
     background-image: url(../assets/img/icons/icon--arrow-right.svg);
   }
 
-  &_head {
-    background-image: url(../assets/img/icons/icon--head.svg);
+  &_chevron-down {
+    width: 15px;
+    background-image: url(../assets/img/icons/icon--chevron-down.svg);
   }
 
-  &_human {
-    background-image: url(../assets/img/icons/icon--human.svg);
-  }
 
-  &_graph {
-    background-image: url(../assets/img/icons/icon--graph.svg);
-  }
-
-  &_rub {
-    background-image: url(../assets/img/icons/icon--rub.svg);
-  }
-
-  &_smile {
-    background-image: url(../assets/img/icons/icon--smile.svg);
-  }
 }
 
 .stress {

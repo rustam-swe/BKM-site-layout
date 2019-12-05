@@ -148,3 +148,88 @@
     margin-left: 15px
   }
 }
+
+// СЕКЦИЯ: Анонсы
+
+.announcements {
+  position: relative;
+  background: linear-gradient(0deg, #F7F7F7, #F7F7F7);
+
+  &__grid {
+    display: flex;
+  }
+
+  &__announcement {
+    width: 50%;
+    font-family: $light-font;
+    font-weight: 100;
+
+    &:nth-child(odd) {
+      padding-right: 40px;
+    }
+
+    &:nth-child(even) {
+      padding-left: 40px;
+      border-left: 1px solid $accent-color;
+    }
+  }
+
+  &__header {
+    display: flex;
+
+    &-info {
+      margin-left: 20px;
+    }
+  }
+
+  &__thumb {
+    flex-shrink: 0;
+  }
+
+  &__img {
+    border-radius: 50%;
+  }
+
+  // Загаловки анонса
+  &__title,
+  &__subtitle {
+    color: $accent-color;
+  }
+
+  &__title {
+    font-size: 30px;
+    font-weight: bold;
+  }
+
+  &__subtitle {
+    font-size: 25px;
+    font-weight: 100;
+    line-height: 35px;
+  }
+
+  &__date,
+  &__address {
+    line-height: 23px;
+  }
+
+  // Отрывок анонса
+  &__exerpt {
+    margin-top: 20px;
+    text-align: justify;
+  }
+
+  &__more-btn {
+    @extend %flexCenterX;
+    align-items: flex-end;
+    position: absolute;
+    bottom: -15px;
+    left: 50%;
+    width: 30px;
+    height: 30px;
+    border: transparent;
+    border-radius: 50%;
+    transform: translateX(-50%);
+    background: linear-gradient(0deg, #F7F7F7, #F7F7F7);
+    cursor: pointer;
+  }
+}
