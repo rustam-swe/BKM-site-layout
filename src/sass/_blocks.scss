@@ -125,8 +125,33 @@
 }
 
 .author {
+  max-width: 400px;
+  height: 80px;
+  display: flex;
+  flex-direction: column;
+
+  &_with-photo {
+    display: grid;
+    grid-template-columns: 80px auto;
+    grid-template-rows: 35% auto;
+    grid-gap: 0 25px;
+    grid-template-areas:
+      'author-photo author-name'
+      'author-photo author-position';
+  }
+
   &__name {
+    font-size: 24px;
     font-weight: bold;
+    grid-area: author-name;
+  }
+
+  &__photo {
+    grid-area: author-photo;
+  }
+
+  &__position {
+    grid-area: author-position;
   }
 }
 

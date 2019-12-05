@@ -19,24 +19,24 @@ html(lang="ru")
             .home-slider__container.container
               .home-slider__info
                 header.main-slider__header.section__header
-                  h1.main-slider__title
+                  h2.main-slider__title
                     span.stress_accent-color БОГ ЯВЛЯЕТСЯ САМЫМ ПЕРВЫМ ПРЕДПРИНИМАТЕЛЕМ:
                     br
                     | ОН НАЧАЛ С ИДЕИ, ЗАМЫСЛА, И ЗАТЕМ СОТВОРИЛ БЕСКОНЕЧНЫЕ МНОЖЕСТВА ПРЕКРАСНЫХ ВЕЩЕЙ. 
                 .author
                   .author__name Матс Тюнехаг
-                  .author__post руководитель рабочей группы Бизнес как миссия при Лозаннском движении
+                  .author__position руководитель рабочей группы Бизнес как миссия при Лозаннском движении
 
           article.home-slider__slide
             .home-slider__container.container
               .home-slider__info
                 header.main-slider__header.section__header
-                  h1.main-slider__title
+                  h2.main-slider__title
                     span.stress_accent-color БОГ ЯВЛЯЕТСЯ САМЫМ ПЕРВЫМ ПРЕДПРИНИМАТЕЛЕМ:
                     | ОН НАЧАЛ С ИДЕИ, ЗАМЫСЛА, И ЗАТЕМ СОТВОРИЛ БЕСКОНЕЧНЫЕ МНОЖЕСТВА ПРЕКРАСНЫХ ВЕЩЕЙ. 
                 .author
                   .author__name Матс Тюнехаг
-                  .author__post руководитель рабочей группы Бизнес как миссия при Лозаннском движении
+                  .author__position руководитель рабочей группы Бизнес как миссия при Лозаннском движении
 
       //- СЕКЦИЯ: Что такое миссия
       section.mission.section
@@ -44,7 +44,7 @@ html(lang="ru")
           .mission__grid-box.row
             .description
               header.description__header
-                h1.description__title
+                h2.description__title
                   | Что такое &nbsp;
                   span.stress_accent-color бизнес миссия
                   | ?
@@ -55,7 +55,7 @@ html(lang="ru")
             
             .requirements
               header.requirements__header
-                h1.requirements__title При каких условиях бизнес становится миссией?
+                h2.requirements__title При каких условиях бизнес становится миссией?
               p.requirements__text Участники движения БКМ говорят о позитивном влиянии на четырех уровнях:
 
               ul.requirements__list.list
@@ -65,7 +65,7 @@ html(lang="ru")
 
                   .requirements__info
                     header.requirements__item-header
-                      h1.requirements__item-title ЭКОНОМИЧЕСКОМ
+                      h2.requirements__item-title ЭКОНОМИЧЕСКОМ
                     p.requirements__text бизнес должен способствовать росту экономики на той территории, где он действует
   
                 li.requirements__item
@@ -74,7 +74,7 @@ html(lang="ru")
 
                   .requirements__info
                     header.requirements__item-header
-                      h1.requirements__item-title ЭКОНОМИЧЕСКОМ
+                      h2.requirements__item-title ЭКОНОМИЧЕСКОМ
                     p.requirements__text бизнес должен способствовать росту экономики на той территории, где он действует
                 
                 li.requirements__item
@@ -83,7 +83,7 @@ html(lang="ru")
 
                   .requirements__info
                     header.requirements__item-header
-                      h1.requirements__item-title ЭКОНОМИЧЕСКОМ
+                      h2.requirements__item-title ЭКОНОМИЧЕСКОМ
                     p.requirements__text бизнес должен способствовать росту экономики на той территории, где он действует
 
                 li.requirements__item
@@ -92,7 +92,7 @@ html(lang="ru")
 
                   .requirements__info
                     header.requirements__item-header
-                      h1.requirements__item-title ЭКОНОМИЧЕСКОМ
+                      h2.requirements__item-title ЭКОНОМИЧЕСКОМ
                     p.requirements__text бизнес должен способствовать росту экономики на той территории, где он действует             
 
           p.mission__summary-text
@@ -129,8 +129,14 @@ html(lang="ru")
             
 
       //- СЕКЦИЯ: Цытата
-      section.quotation.section
-        .container
+      .quotation-wrapper
+        section.quotation.section
+          .container
+            .quotation__text Бизнес - основная сила, которая позволяет любви Бога проявиться в человеческой истории.
+            .author.author_with-photo
+              img.author__photo(src="./assets/img/quotation-author.png")
+              .author__name Даллас Уиллард
+              .author__position американский философ-феноменолог и богослов
 
       //- СЕКЦИЯ: Новости
       section.news.section

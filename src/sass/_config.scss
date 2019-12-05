@@ -12,8 +12,7 @@ $main-font: Circe-Regular;
 $bold-font: Circe-Bold;
 $light-font: Circe-Light;
 
-$shadow: 0px 0px 4px rgba(0, 0, 0, 0.25),
-0px 0px 4px rgba(0, 0, 0, 0.25);
+$shadow: inset 0px 0px 4px rgba(0, 0, 0, 0.25);
 $text-shadow: 4px 4px 4px rgba(0, 0, 0, 0.25);
 
 $bg-gradient: linear-gradient(90deg, #00C0FF 9.91%, #026687 100.04%);
@@ -59,7 +58,7 @@ linear-gradient(-90deg, #00d7cf 0.01%, #00c0ff 100.04%),
 :root {
   color: $primary-color;
   font-size: 16px;
-  font-family: $main-font;
+  font-family: $light-font;
 }
 
 ::placeholder {

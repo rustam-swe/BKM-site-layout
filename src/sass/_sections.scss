@@ -233,3 +233,30 @@
     cursor: pointer;
   }
 }
+
+
+
+
+// СЕКЦИЯ: Цытата
+.quotation {
+  background-color: #fff;
+  box-shadow: $shadow;
+
+  &-wrapper {
+    padding: 70px 0;
+    background: linear-gradient(136.5deg, #DFE119 0.25%, #8FCC33 16.07%, #43B74B 32.48%, #12AA5B 44.22%, #00A561 50.03%, #0E013D 99.81%);
+  }
+
+  &__text {
+    font-size: 42px;
+    line-height: 50px;
+    text-align: center;
+    font-weight: 100;
+    font-family: $light-font;
+  }
+
+  .author {
+    margin-left: auto;
+    margin-right: auto;
+  }
+}

@@ -14,7 +14,7 @@
 :root {
   color: #333;
   font-size: 16px;
-  font-family: Circe-Regular; }
+  font-family: Circe-Light; }
 
 ::placeholder {
   color: #fff; }
@@ -222,7 +222,7 @@ h1 {
   line-height: 20px;
   text-transform: uppercase;
   background: linear-gradient(90deg, #00c0ff 9.91%, #026687 100.04%), linear-gradient(90deg, #00d7cf 0.01%, #00c0ff 100.04%), #00c0ff;
-  box-shadow: 0px 0px 4px rgba(0, 0, 0, 0.25), 0px 0px 4px rgba(0, 0, 0, 0.25);
+  box-shadow: inset 0px 0px 4px rgba(0, 0, 0, 0.25);
   border: transparent;
   border-radius: 5px;
   cursor: pointer; }
@@ -277,8 +277,25 @@ h1 {
 .socials .link:not(:first-child) {
   margin-left: 15px; }
 
-.author__name {
-  font-weight: bold; }
+.author {
+  max-width: 400px;
+  height: 80px;
+  display: flex;
+  flex-direction: column; }
+  .author_with-photo {
+    display: grid;
+    grid-template-columns: 80px auto;
+    grid-template-rows: 35% auto;
+    grid-gap: 0 25px;
+    grid-template-areas: 'author-photo author-name' 'author-photo author-position'; }
+  .author__name {
+    font-size: 24px;
+    font-weight: bold;
+    grid-area: author-name; }
+  .author__photo {
+    grid-area: author-photo; }
+  .author__position {
+    grid-area: author-position; }
 
 .section {
   padding-top: 50px;
@@ -510,6 +527,22 @@ h1 {
     transform: translateX(-50%);
     background: linear-gradient(0deg, #F7F7F7, #F7F7F7);
     cursor: pointer; }
+
+.quotation {
+  background-color: #fff;
+  box-shadow: inset 0px 0px 4px rgba(0, 0, 0, 0.25); }
+  .quotation-wrapper {
+    padding: 70px 0;
+    background: linear-gradient(136.5deg, #DFE119 0.25%, #8FCC33 16.07%, #43B74B 32.48%, #12AA5B 44.22%, #00A561 50.03%, #0E013D 99.81%); }
+  .quotation__text {
+    font-size: 42px;
+    line-height: 50px;
+    text-align: center;
+    font-weight: 100;
+    font-family: Circe-Light; }
+  .quotation .author {
+    margin-left: auto;
+    margin-right: auto; }
 
 .footer {
   padding-top: 15px;
