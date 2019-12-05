@@ -124,26 +124,6 @@
       }
     }
   }
-
-  .contact-form__container {
-    grid-template-rows: 75% 25%;
-  }
-
-  // Наши услуги
-  .services {
-    &__grid {
-      grid-gap: 30px;
-    }
-  }
-
-  // Контакты
-  .contacts {
-    width: 37%;
-  }
-
-  .map {
-    @include calcMapWidth(37%);
-  }
 }
 
 // max-width: 992px
@@ -199,99 +179,6 @@
     }
   }
 
-  .info-block {
-    height: auto
-  }
-
-  .timeline {
-    flex-wrap: wrap;
-    justify-content: space-evenly;
-
-    &__item {
-      width: 30%;
-      height: auto;
-      flex-direction: column;
-      margin-top: 30px;
-    }
-
-    &__core,
-    &__number,
-    &__arrow {
-      display: none;
-    }
-
-    &__graph,
-    &__text {
-      position: initial
-    }
-
-    &__text {
-      top: 0;
-      order: 2;
-      margin-top: 15px
-    }
-
-    &__graph {
-      top: 40px;
-      order: 1
-    }
-  }
-
-  // Секция Клиенты
-  .our-clients {
-    padding: 50px 0;
-
-    &__list {
-      height: auto;
-    }
-
-    &__client {
-      height: 50px;
-      padding-left: 10px;
-      padding-right: 10px;
-    }
-  }
-
-  // Секция Контактная форма
-  .contact-form__container {
-    grid-template-columns: auto;
-  }
-
-  .section {
-    &__title {
-      // font-size: 25px;
-      // line-height: 30px;
-      font-size: 22px;
-      line-height: 20px;
-    }
-
-    &__subtitle {
-      margin-top: 15px;
-      font-size: 16px;
-    }
-  }
-
-
-  .tel_big {
-    font-size: 25px;
-    line-height: normal;
-  }
-
-  .services {
-    &__grid {
-      grid-template-columns: repeat(2, 1fr);
-      grid-gap: 50px;
-    }
-  }
-
-  // Контакты
-  .contacts {
-    width: 45%;
-  }
-
-  .map {
-    @include calcMapWidth(45%);
-  }
 }
 
 // max-width: 767px
@@ -374,98 +261,6 @@
       }
     }
   }
-
-  // Таймлайн
-  .info-graphics {
-    padding-bottom: 50px;
-  }
-
-  .timeline {
-    &__item {
-      width: 45%
-    }
-  }
-
-  .contact-form {
-    padding-top: 50px;
-
-    &__container {
-      height: auto;
-      grid-template-rows: auto;
-      grid-template-columns: 1fr;
-      grid-gap: 30px;
-      grid-template-areas:
-        'header'
-        'phone'
-        'contact-form';
-    }
-  }
-
-  .tel_big {
-    justify-content: center;
-  }
-
-  .form-wrapper {
-    justify-self: center;
-  }
-
-  // Портфолио
-  .portfolio-slider {
-    &__container {
-      width: 100%;
-      // max-width: calc(100% - 80px)
-    }
-
-    &__info {
-      width: 100%;
-      height: auto
-    }
-  }
-
-  // Наши услуги
-  .services {
-    &__grid {
-      grid-template-columns: 1fr;
-    }
-
-    &__service {
-      display: flex;
-      justify-content: center;
-      align-items: center;
-    }
-  }
-
-  // Контакты
-  .contacts-section {
-    height: auto;
-    flex-direction: column;
-  }
-
-  .contacts {
-    width: 100%;
-    justify-content: center;
-    padding: 30px 0
-  }
-
-  .map {
-    width: 100%;
-  }
-
-  // Подвал
-  .footer {
-
-    .link {
-      justify-content: center;
-    }
-
-    &__copyright {
-      order: 3
-    }
-
-    &__developer {
-      order: 2
-    }
-  }
 }
 
 // max-width: 600px
@@ -501,10 +296,6 @@
     }
 
   }
-
-  .services__caption {
-    font-size: 16px;
-  }
 }
 
 // max-width: 480px
@@ -534,99 +325,5 @@
     &__right-side {
       display: none;
     }
-  }
-
-  /*.header__contacts {
-    padding-right: 15px;
-
-    .link {
-      justify-content: flex-start
-    }
-  }*/
-
-  .main-contacts__tel {
-    font-size: 20px;
-  }
-
-  // Клиенты
-  .our-clients {
-    &__list {
-      height: auto;
-    }
-
-    &__client {
-      display: flex !important; // Для правильного отображения в слайдере (slick)
-      height: auto;
-      padding: 0;
-      border: none
-    }
-
-    .slick-prev,
-    .slick-next {
-      border-color: $primary-color;
-    }
-
-    .slick-prev {
-      left: 10px;
-    }
-
-    .slick-next {
-      right: 10px;
-    }
-  }
-
-  .timeline {
-    &__item {
-      width: 100%
-    }
-  }
-
-  // Контактная форма
-  .contact-form {
-    padding-top: 30px;
-  }
-
-  .form-wrapper {
-    width: 100%;
-    max-width: 300px;
-    height: 400px;
-    background-size: cover;
-  }
-
-  // Портфолио
-  .portfolio-slider {
-    &__container {
-      padding: 0;
-    }
-
-    &__info {
-      padding: 15px;
-      border-radius: 0;
-    }
-
-    &__btn {
-      width: auto;
-    }
-  }
-
-  // Наши услуги
-  .services__service {
-    width: 100%;
-  }
-
-  // Подвал
-  .footer {
-
-    &__copyright {
-      order: 2
-    }
-
-    &__developer {
-      order: 3
-    }
-  }
-
-  .modal-md {
-    max-width: 90% !important;
   }
 }

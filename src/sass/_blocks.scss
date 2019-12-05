@@ -12,15 +12,15 @@
 .link {
   @extend %flexCenterY;
   color: $primary-color;
-  text-decoration: none;
+  // text-decoration: none;
   cursor: pointer;
 
-  &_underlined {
-    text-decoration: underline;
-  }
+  // &_underlined {
+  //   text-decoration: underline;
+  // }
 
-  &:not(.btn):not(.logo):hover {
-    text-decoration: underline
+  &_accent {
+    color: $accent-color;
   }
 }
 
