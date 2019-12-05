@@ -1,0 +1,80 @@
+doctype html
+html(lang="ru")
+  head
+    meta(charset="UTF-8")
+    meta(name="viewport", content="width=device-width, initial-scale=1.0")
+    meta(http-equiv="X-UA-Compatible", content="ie=edge")
+    title БКМ
+    link(href='css/normalize.css', rel='stylesheet' type='text/css')
+    link(href='css/bootstrap-grid.min.css' rel='stylesheet' type='text/css')
+    link(href='css/jquery.fancybox.min.css' rel='stylesheet' type='text/css')
+    link(href='css/main.css', rel='stylesheet' type='text/css')
+  body
+    include _header.pug
+    main.main
+      //- СЕКЦИЯ: Баннер
+      section.section.banner
+        .home-slider
+          article.home-slider__slide
+            .home-slider__container.container
+              .home-slider__info
+                header.main-slider__header.section__header
+                  h1.main-slider__title
+                    span.stress_accent-color БОГ ЯВЛЯЕТСЯ САМЫМ ПЕРВЫМ ПРЕДПРИНИМАТЕЛЕМ:
+                    br
+                    | ОН НАЧАЛ С ИДЕИ, ЗАМЫСЛА, И ЗАТЕМ СОТВОРИЛ БЕСКОНЕЧНЫЕ МНОЖЕСТВА ПРЕКРАСНЫХ ВЕЩЕЙ. 
+                .author
+                  .author__name Матс Тюнехаг
+                  .author__post руководитель рабочей группы Бизнес как миссия при Лозаннском движении
+
+          article.home-slider__slide
+            .home-slider__container.container
+              .home-slider__info
+                header.main-slider__header.section__header
+                  h1.main-slider__title
+                    span.stress_accent-color БОГ ЯВЛЯЕТСЯ САМЫМ ПЕРВЫМ ПРЕДПРИНИМАТЕЛЕМ:
+                    | ОН НАЧАЛ С ИДЕИ, ЗАМЫСЛА, И ЗАТЕМ СОТВОРИЛ БЕСКОНЕЧНЫЕ МНОЖЕСТВА ПРЕКРАСНЫХ ВЕЩЕЙ. 
+                .author
+                  .author__name Матс Тюнехаг
+                  .author__post руководитель рабочей группы Бизнес как миссия при Лозаннском движении
+
+      //- СЕКЦИЯ: Что такое миссия
+      section.mission.section
+        .container
+          .description
+            header.description__header
+              h1.description__title
+                | Что такое
+                span.stress_accent-color бизнес миссия
+                | ?
+            p.decription__text Возможно, Вас учили тому, что главное служение христианина-предпринимателя – это приносить хорошие пожертвования и поддерживать социальные и миссионерские проекты. Однако, Писание говорит нам о том, что давать пожертвования – это привилегия, доступная всем христианам, независимо от уровня дохода. Более того, размер пожертвований вообще Бога не впечатляет (Лк. 21:1-4),
+            p.decription__text Его гораздо больше интересует состояние наших сердец.
+            p.decription__text У движения "Бизнес как миссия" есть другой взгляд на служение предпринимателя: бизнес - это средство целостной трансформации общества, путем осуществления позитивных изменений на четырех уровнях: экономическом, социальном, в окружающей среде и духовном. Каждое из этих изменений указывает на Бога, искупительную жертву Христа и, тем самым, свидетельствует о Царстве Божьем. Иными словами, сам бизнес является служением! 
+
+      //- СЕКЦИЯ: Анонсы
+      section.announcements.section
+        .container
+          .announcements__grid
+
+      //- СЕКЦИЯ: Цытата
+      section.quotation.section
+        .container
+
+      //- СЕКЦИЯ: Новости
+      section.news.section
+        .container
+      
+      //- СЕКЦИЯ: Форма подписки
+      section.subscribtion.section
+        .container
+
+      //- СЕКЦИЯ: Ресурсы
+      section#resourses.resourses.section
+        .container
+
+      //- СЕКЦИЯ: Партнеры и спонсоры
+      section#partners.partners.section
+        .container
+
+    //- ФУТЕР
+    include _footer.pug    

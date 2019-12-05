@@ -1,0 +1,149 @@
+// Common blocks
+.logo {
+  width: 200px;
+  height: 100px;
+}
+
+.list {
+  list-style: none;
+  padding: 0;
+}
+
+.link {
+  @extend %flexCenterY;
+  color: $primary-color;
+  text-decoration: none;
+  cursor: pointer;
+
+  &_underlined {
+    text-decoration: underline;
+  }
+
+  &:not(.btn):not(.logo):hover {
+    text-decoration: underline
+  }
+}
+
+.btn {
+  @extend %flexCenterXY;
+  height: 40px;
+  padding: 0 12px;
+  color: #fff;
+  font-weight: 600;
+  font-size: 15px;
+  line-height: 20px;
+  text-transform: uppercase;
+  background: $gradient;
+  box-shadow: $shadow;
+  border: transparent;
+  border-radius: 5px;
+  cursor: pointer;
+
+  &_alt {
+    background: #fff;
+    color: $accent-color;
+
+    &:hover {
+      background: $hover-gradient;
+      color: #fff;
+    }
+  }
+
+  &:not(.btn_alt):hover {
+    background: $hover-gradient;
+  }
+}
+
+.icon {
+  position: relative;
+  display: inline-block;
+  width: 20px;
+  height: 20px;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: contain;
+
+  &_tel {
+    background-image: url(../assets/img/icons/icon--tel.svg);
+
+    &-alt {
+      width: 45px;
+      height: 45px;
+      background-image: url(../assets/img/icons/icon--tel-alt.svg);
+    }
+  }
+
+  &_mail {
+    background-image: url(../assets/img/icons/icon--mail.svg);
+  }
+
+  &_arrow-right {
+    width: 38px;
+    height: 17px;
+    background-image: url(../assets/img/icons/icon--arrow-right.svg);
+  }
+
+  &_head {
+    background-image: url(../assets/img/icons/icon--head.svg);
+  }
+
+  &_human {
+    background-image: url(../assets/img/icons/icon--human.svg);
+  }
+
+  &_graph {
+    background-image: url(../assets/img/icons/icon--graph.svg);
+  }
+
+  &_rub {
+    background-image: url(../assets/img/icons/icon--rub.svg);
+  }
+
+  &_smile {
+    background-image: url(../assets/img/icons/icon--smile.svg);
+  }
+}
+
+.stress {
+  &_accent-color {
+    color: $accent-color;
+  }
+}
+
+.nav {
+  &__menu {
+    display: flex;
+    justify-content: space-around;
+  }
+
+  &__item:not(:first-child) {
+    margin-left: 40px;
+  }
+
+  &__link {
+    color: $menu-links-color;
+
+    &_active {
+      color: $menu-active-link-color;
+    }
+  }
+}
+
+.socials {
+  @extend %flexCenterXY;
+
+  .link:not(:first-child) {
+    margin-left: 15px;
+  }
+}
+
+.author {
+  &__name {
+    font-weight: bold;
+  }
+}
+
+.section {
+  padding-top: 50px;
+  padding-bottom: 50px;
+}

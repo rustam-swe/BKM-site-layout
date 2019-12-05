@@ -1,0 +1,18 @@
+{
+  "name": "bkm",
+  "version": "1.0.0",
+  "main": "index.js",
+  "author": "Rustam <rustamergashev.sp@gmail.com>",
+  "license": "MIT",
+  "devDependencies": {
+    "browser-sync": "^2.26.7",
+    "gulp": "^4.0.2",
+    "gulp-pug": "^4.0.1",
+    "gulp-sass": "^4.0.2",
+    "node-sass": "^4.13.0"
+  },
+  "dependencies": {
+    "global": "^4.4.0",
+    "gulp-cli": "^2.2.0"
+  }
+}

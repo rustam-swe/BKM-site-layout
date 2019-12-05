@@ -1,0 +1,13 @@
+.footer {
+  padding-top: 15px;
+  padding-bottom: 15px;
+
+  &__col {
+    text-align: center;
+    line-height: 25px;
+  }
+
+  &__link {
+    display: inline
+  }
+}

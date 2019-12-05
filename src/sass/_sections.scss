@@ -1,0 +1,420 @@
+.section {
+  padding-top: 50px;
+  padding-bottom: 50px;
+
+  &__title {
+    font-family: $bold-font;
+    font-weight: bold;
+    font-size: 36px;
+    line-height: 49px;
+  }
+
+  &__subtitle {
+    font-weight: normal;
+    margin-top: 25px;
+    font-size: 18px;
+  }
+}
+
+// Specific blocks
+
+// Main slider
+.banner {
+  padding: 0;
+  background: $bg-gradient;
+}
+
+.home-slider {
+  max-width: 1360px;
+  margin: 0 auto;
+
+  &__container {
+    @extend %flexCenterY;
+    height: 500px;
+  }
+
+  &__info {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    flex-shrink: 0;
+    width: 40%;
+    height: 80%;
+
+    border-width: 7px;
+    border-style: solid;
+    border-image: url('../assets/img/border-gradient.svg') 60 30;
+  }
+
+  &__title {
+    font-family: $light-font;
+  }
+
+}
+
+.author {
+  margin-top: 30px;
+}
+
+// Наши клиенты
+.our-clients {
+  padding: 0;
+  background: #F7F7F7;
+
+  &__list {
+    @extend %flexCenterY;
+    height: 240px;
+  }
+
+  .slick {
+    &-slider {
+      margin-bottom: 0;
+    }
+
+    &-dots {
+      bottom: -25px;
+
+      li {
+        &.slick-active button {
+          background: rgba(0, 0, 0, .8);
+        }
+
+        button {
+          background: rgba(0, 0, 0, .4);
+
+          &:hover {
+            background: rgba(0, 0, 0, .8);
+          }
+        }
+      }
+    }
+  }
+
+  &__client {
+    @extend %flexCenterXY;
+    height: 90px;
+    padding-left: 45px;
+    padding-right: 45px;
+    border-left: 1px solid;
+    border-right: 1px solid;
+    border-color: rgba(158, 158, 158, 0.5);
+
+    &:first-child {
+      border-left-width: 2px;
+    }
+
+    &:last-child {
+      border-right-width: 2px;
+    }
+  }
+
+  &__thumb {
+    filter: grayscale(100%) brightness(180%);
+
+    &:hover {
+      filter: none
+    }
+  }
+}
+
+// Секция Таймлайн
+.info {
+  &-graphics {
+    padding-bottom: 120px;
+
+    &__paragraph {
+      margin-top: 25px;
+      font-weight: normal;
+      font-size: 18px;
+      line-height: 25px;
+    }
+  }
+
+  &-block {
+    @extend %flexCenterY;
+    height: 500px;
+    margin-top: 30px;
+  }
+}
+
+// Секция с контактнами
+.contact-form {
+
+  box-shadow: $shadow;
+
+  // overflow: hidden;
+  padding: 0;
+
+  &__container {
+    height: 385px;
+    display: grid;
+    grid-template-rows: 65% 35%;
+    grid-template-columns: 55% 45%;
+    grid-template-areas:
+      'header contact-form'
+      'phone contact-form';
+  }
+
+  .section__header,
+  .tel_big {
+    align-self: center;
+  }
+
+  .section__header {
+    grid-area: header;
+  }
+
+  .tel_big {
+    grid-area: phone
+  }
+}
+
+.form-wrapper {
+  @extend %flexCenterX;
+  align-items: flex-end;
+
+  grid-area: contact-form;
+  align-self: end;
+  justify-self: end;
+
+  width: 320px;
+  height: 455px;
+  padding-left: 50px;
+  padding-right: 50px;
+  padding-bottom: 45px;
+  background: url(../assets/img/mockup-phone.png) no-repeat;
+  filter: drop-shadow(-10px 0px 20px rgba(0, 0, 0, .6));
+}
+
+.form {
+  &__input {
+    width: 100%;
+    color: $secondary-color;
+    font-weight: normal;
+    font-size: 18px;
+    line-height: 25px;
+    background: transparent;
+    border: transparent;
+    border-bottom: 1px solid $secondary-color;
+
+    &:not(:first-child) {
+      margin-top: 30px
+    }
+  }
+
+  &__btn {
+    width: 100%;
+    margin-top: 25px;
+  }
+
+  &__disclaimer {
+    margin-top: 10px;
+    color: $secondary-color;
+    font-weight: normal;
+    font-size: 10px;
+    line-height: 14px;
+    text-align: center;
+  }
+}
+
+// Портфолио
+.portfolio {
+  padding-bottom: 0;
+
+  .section__title {
+    margin-bottom: 40px;
+    text-align: center;
+  }
+
+  &-slider {
+    max-width: 1362px;
+    margin-left: auto;
+    margin-right: auto;
+    box-shadow: 0px 4px 4px rgba(66, 15, 15, 0.25);
+
+    &__slide {
+      position: relative;
+    }
+
+    .slick-prev,
+    .slick-next {
+      border-color: $accent-color;
+
+      &:hover {
+        border-color: $secondary-color;
+      }
+    }
+
+    &__container {
+      position: absolute;
+      @extend %positionCenterX;
+    }
+
+    &__img {
+      width: 100%;
+      height: 480px;
+      object-fit: cover;
+      border: 4px solid #01C1FE;
+    }
+
+    &__info {
+      // position: absolute;
+      width: 531px;
+      height: 287px;
+      padding: 20px 20px 15px 30px;
+      border-radius: 0 0 100px 0;
+      background: linear-gradient(90deg, rgba(0, 192, 255, 0.5) 9.91%, rgba(2, 102, 135, 0.5) 100.04%);
+    }
+
+    &__title {
+      color: $secondary-color;
+    }
+
+    &__subtitle {
+      font-size: 18px;
+      font-style: normal;
+      font-weight: normal;
+      line-height: 25px;
+      color: rgba(255, 255, 255, 0.52);
+    }
+
+    &__text {
+      margin-top: 10px;
+      color: $secondary-color;
+      line-height: 19px;
+    }
+
+    &__footer {
+      margin-top: 30px;
+    }
+
+    &__btn {
+      width: 218px;
+      height: 40px;
+    }
+  }
+}
+
+
+// Наши услуги
+.services {
+  .section__title {
+    margin-bottom: 40px;
+    text-align: center;
+  }
+
+  &__grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 50px;
+  }
+
+  &__service {
+    // @extend %flexCenterXY;
+    position: relative;
+    width: 100%;
+    max-width: 360px;
+    align-self: center;
+    justify-self: center;
+
+    &:hover .services__caption {
+      left: 22px;
+      bottom: 18px;
+    }
+
+    &:hover img {
+      top: 0;
+      left: 0;
+    }
+  }
+
+  &__thumb {
+    position: relative;
+    display: block;
+    width: 360px;
+    height: 232px;
+    max-width: calc(100% - 10px);
+    max-height: calc(100% - 10px);
+    background: linear-gradient(90deg, #00C0FF 9.91%, #026687 100.04%), linear-gradient(90deg, rgba(0, 215, 207, 0.5) 0.01%, rgba(0, 192, 255, 0.5) 100.04%);
+  }
+
+  &__img {
+    position: absolute;
+    top: 8px;
+    left: 8px;
+    width: 100%;
+    height: 100%;
+    border: 3px solid $secondary-color;
+    object-fit: cover;
+    transition: 0.3s ease;
+  }
+
+  &__caption {
+    position: absolute;
+    left: 30px;
+    bottom: 10px;
+    color: $secondary-color;
+    font-weight: bold;
+    font-size: 24px;
+    line-height: 33px;
+    transition: 0.3s ease;
+  }
+}
+
+// Контакты и карта
+@mixin calcMapWidth ($contactsWidth: 30%) {
+  width: 100% - $contactsWidth
+}
+
+.contacts {
+  &-section {
+    height: 351px;
+    padding: 0;
+    display: flex;
+  }
+}
+
+.contacts,
+.map {
+  flex-shrink: 0;
+}
+
+.contacts {
+  @extend %flexCenterY;
+  justify-content: flex-end;
+  // position: absolute;
+  width: 30%; // 390px;
+  height: 100%;
+  padding-right: 20px;
+  background: linear-gradient(90deg, #00C0FF 9.91%, #026687 100.04%), linear-gradient(90deg, #00D7CF 0.01%, #00C0FF 100.04%), linear-gradient(0deg, rgba(131, 222, 217, 0.9), rgba(131, 222, 217, 0.9));
+
+  * {
+    color: $accent-color;
+  }
+
+  &__block {
+    width: 321px;
+    height: 313px;
+    padding: 25px 30px;
+    background-color: #fff;
+    box-shadow: $shadow;
+    border-radius: 8px;
+  }
+
+  &__title {
+    margin-top: 20px;
+  }
+
+  .main-contacts {
+    margin-top: 10px;
+  }
+}
+
+.map {
+  // width: 60%;
+  @include calcMapWidth(30%);
+  height: 350px;
+  flex-grow: 1;
+  background: url(../assets/img/map--bg.jpg) no-repeat center;
+  background-size: cover;
+}

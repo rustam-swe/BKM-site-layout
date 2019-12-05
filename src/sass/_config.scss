@@ -1,0 +1,115 @@
+// Конфигурации
+
+// Переменные
+$primary-color: #333;
+$secondary-color: #fff;
+$accent-color: #0DAF4B;
+$menu-links-color: #939598;
+$menu-active-link-color: #222222;
+
+
+$main-font: Circe-Regular;
+$bold-font: Circe-Bold;
+$light-font: Circe-Light;
+
+$shadow: 0px 0px 4px rgba(0, 0, 0, 0.25),
+0px 0px 4px rgba(0, 0, 0, 0.25);
+$text-shadow: 4px 4px 4px rgba(0, 0, 0, 0.25);
+
+$bg-gradient: linear-gradient(90deg, #00C0FF 9.91%, #026687 100.04%);
+$gradient: linear-gradient(90deg, #00c0ff 9.91%, #026687 100.04%),
+linear-gradient(90deg, #00d7cf 0.01%, #00c0ff 100.04%),
+#00c0ff;
+$hover-gradient: linear-gradient(-90deg, #00c0ff 9.91%, #026687 100.04%),
+linear-gradient(-90deg, #00d7cf 0.01%, #00c0ff 100.04%),
+#00c0ff;
+
+%positionCenterX {
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+%positionCenterY {
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+%positionCenterXY {
+  top: 50%;
+  left: 50%;
+  transform: translateX(-50%, 50%);
+}
+
+%flexCenterXY {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+%flexCenterX {
+  display: flex;
+  justify-content: center;
+}
+
+%flexCenterY {
+  display: flex;
+  align-items: center;
+}
+
+:root {
+  color: $primary-color;
+  font-size: 16px;
+  font-family: $main-font;
+}
+
+::placeholder {
+  color: #fff;
+}
+
+*,
+h1 {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+
+  // Исправляет баги флекс боксов (slick.js)
+  min-width: 0;
+  min-height: 0;
+}
+
+// Медиа запросы
+@mixin mediaXl {
+  @media screen and (min-width: 1200px) {
+    @content;
+  }
+}
+
+@mixin mediaLg {
+  @media screen and (max-width: 1199px) {
+    @content;
+  }
+}
+
+@mixin mediaMd {
+  @media screen and (max-width: 992px) {
+    @content;
+  }
+}
+
+@mixin mediaSm {
+  @media screen and (max-width: 767px) {
+    @content;
+  }
+}
+
+@mixin mediaMax-600 {
+  @media screen and (max-width: 600px) {
+    @content;
+  }
+}
+
+@mixin mediaXs {
+  @media screen and (max-width: 480px) {
+    @content;
+  }
+}
