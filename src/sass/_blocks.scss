@@ -26,31 +26,26 @@
 
 .btn {
   @extend %flexCenterXY;
-  height: 40px;
-  padding: 0 12px;
-  color: #fff;
-  font-weight: 600;
-  font-size: 15px;
-  line-height: 20px;
+  padding: 5px 15px;
+  border: 1px solid $accent-color;
+  border-radius: 33px;
   text-transform: uppercase;
-  background: $gradient;
-  box-shadow: $shadow;
-  border: transparent;
-  border-radius: 5px;
   cursor: pointer;
 
-  &_alt {
-    background: #fff;
-    color: $accent-color;
-
-    &:hover {
-      background: $hover-gradient;
-      color: #fff;
-    }
+  &:hover {
+    color: #fff;
+    background-color: $accent-color;
   }
 
-  &:not(.btn_alt):hover {
-    background: $hover-gradient;
+  &_alt {
+    color: $accent-color;
+    border: 1px solid #fff;
+    background: transparent;
+
+    &:hover {
+      background: #fff;
+      color: $accent-color;
+    }
   }
 }
 
@@ -153,4 +148,45 @@
   &__position {
     grid-area: author-position;
   }
+}
+
+// Форма подписки
+.subscription {
+  margin-top: 50px;
+  background-color: $accent-color;
+
+  &__btn,
+  &__cta-text,
+  &__privacy-policy-text {
+    color: #fff;
+  }
+
+  &__btn,
+  &__cta-text,
+  &__input {
+    font-family: $main-font;
+  }
+
+
+  &__form {
+    display: flex;
+  }
+
+  &__input,
+  &__btn {
+    font-size: 14px;
+  }
+
+  &__btn {
+    border-width: 2px;
+  }
+
+  &__input {
+    width: 220px;
+    padding-left: 20px;
+    border-radius: 33px;
+    border: transparent;
+  }
+
+
 }

@@ -281,9 +281,6 @@
     }
   }
 
-  // &__info{
-
-  // }
   &__thumb {
     width: 200px;
     height: auto;
@@ -300,13 +297,37 @@
 
   &__link {
     margin-top: 15px;
-    padding: 5px 15px;
-    border: 1px solid $accent-color;
-    border-radius: 33px;
+    font-size: 12px;
+  }
+}
 
-    &:hover {
-      color: #fff;
-      background-color: $accent-color;
+// БЛОК: Форма подписки
+.subscription {
+  &_horizontal {
+    @extend %flexCenterXY;
+    height: 120px;
+
+    &>* {
+      height: 40px;
+    }
+
+    .subscription__cta-text {
+      max-width: 320px;
+      text-align: right;
+    }
+
+    .subscription__form {
+      margin: auto 12px;
+    }
+
+    .subscription__btn {
+      margin-left: 12px;
+    }
+
+    .subscription__privacy-policy-text {
+      width: 220px;
+      font-size: 10px;
+      line-height: 12px;
     }
   }
 }

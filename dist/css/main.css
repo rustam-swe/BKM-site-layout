@@ -1,4 +1,4 @@
-.slick-dots, .slick-dots li, .btn, .socials, .language-select, .requirements__thumb {
+.slick-dots, .slick-dots li, .btn, .socials, .language-select, .requirements__thumb, .subscription_horizontal {
   display: flex;
   justify-content: center;
   align-items: center; }
@@ -17,7 +17,7 @@
   font-family: Circe-Light; }
 
 ::placeholder {
-  color: #fff; }
+  color: #868686; }
 
 *,
 h1 {
@@ -214,26 +214,21 @@ h1 {
     color: #0DAF4B; }
 
 .btn {
-  height: 40px;
-  padding: 0 12px;
-  color: #fff;
-  font-weight: 600;
-  font-size: 15px;
-  line-height: 20px;
+  padding: 5px 15px;
+  border: 1px solid #0DAF4B;
+  border-radius: 33px;
   text-transform: uppercase;
-  background: linear-gradient(90deg, #00c0ff 9.91%, #026687 100.04%), linear-gradient(90deg, #00d7cf 0.01%, #00c0ff 100.04%), #00c0ff;
-  box-shadow: inset 0px 0px 4px rgba(0, 0, 0, 0.25);
-  border: transparent;
-  border-radius: 5px;
   cursor: pointer; }
+  .btn:hover {
+    color: #fff;
+    background-color: #0DAF4B; }
   .btn_alt {
-    background: #fff;
-    color: #0DAF4B; }
+    color: #0DAF4B;
+    border: 1px solid #fff;
+    background: transparent; }
     .btn_alt:hover {
-      background: linear-gradient(-90deg, #00c0ff 9.91%, #026687 100.04%), linear-gradient(-90deg, #00d7cf 0.01%, #00c0ff 100.04%), #00c0ff;
-      color: #fff; }
-  .btn:not(.btn_alt):hover {
-    background: linear-gradient(-90deg, #00c0ff 9.91%, #026687 100.04%), linear-gradient(-90deg, #00d7cf 0.01%, #00c0ff 100.04%), #00c0ff; }
+      background: #fff;
+      color: #0DAF4B; }
 
 .icon {
   position: relative;
@@ -296,6 +291,25 @@ h1 {
     grid-area: author-photo; }
   .author__position {
     grid-area: author-position; }
+
+.subscription {
+  margin-top: 50px;
+  background-color: #0DAF4B; }
+  .subscription__btn, .subscription__cta-text, .subscription__privacy-policy-text {
+    color: #fff; }
+  .subscription__btn, .subscription__cta-text, .subscription__input {
+    font-family: Circe-Regular; }
+  .subscription__form {
+    display: flex; }
+  .subscription__input, .subscription__btn {
+    font-size: 14px; }
+  .subscription__btn {
+    border-width: 2px; }
+  .subscription__input {
+    width: 220px;
+    padding-left: 20px;
+    border-radius: 33px;
+    border: transparent; }
 
 .header {
   width: 100%;
@@ -570,12 +584,23 @@ h1 {
 
 .news__link {
   margin-top: 15px;
-  padding: 5px 15px;
-  border: 1px solid #0DAF4B;
-  border-radius: 33px; }
-  .news__link:hover {
-    color: #fff;
-    background-color: #0DAF4B; }
+  font-size: 12px; }
+
+.subscription_horizontal {
+  height: 120px; }
+  .subscription_horizontal > * {
+    height: 40px; }
+  .subscription_horizontal .subscription__cta-text {
+    max-width: 320px;
+    text-align: right; }
+  .subscription_horizontal .subscription__form {
+    margin: auto 12px; }
+  .subscription_horizontal .subscription__btn {
+    margin-left: 12px; }
+  .subscription_horizontal .subscription__privacy-policy-text {
+    width: 220px;
+    font-size: 10px;
+    line-height: 12px; }
 
 .footer {
   padding-top: 15px;
