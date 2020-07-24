@@ -12,28 +12,11 @@ $(document).ready(function () {
       }
     }]
   });
-  $('.portfolio-slider').slick({
-    dots: true,
-    responsive: [{
-      breakpoint: 600,
-      settings: {
-        dots: true,
-        arrows: false
-      }
-    }]
-  });
 
-  $('.our-clients__list').slick({
-    mobileFirst: true,
-    centerMode: true,
-    centerPadding: '40px',
-    slidesToShow: 1,
-    dots: true,
-    arrows: false,
-    responsive: [{
-      breakpoint: 480,
-      settings: "unslick"
-    }]
+  // Слайдер Партнеры
+  $('.partners__list').slick({
+    slidesToShow: 5,
+    dots: false,
   });
 
   // Меню бургер
@@ -88,7 +71,6 @@ $(document).ready(function () {
   }
 
   // Плавная прокрутка к секциям
-
   const callbackBtn = document.querySelectorAll('.call-back');
   // const button = document.querySelector('#button');
   const dialog = document.querySelector('.dialog');

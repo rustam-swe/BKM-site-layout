@@ -7,7 +7,6 @@ $accent-color: #0DAF4B;
 $menu-links-color: #939598;
 $menu-active-link-color: #222222;
 
-
 $main-font: Circe-Regular;
 $bold-font: Circe-Bold;
 $light-font: Circe-Light;
@@ -22,6 +21,7 @@ linear-gradient(90deg, #00d7cf 0.01%, #00c0ff 100.04%),
 $hover-gradient: linear-gradient(-90deg, #00c0ff 9.91%, #026687 100.04%),
 linear-gradient(-90deg, #00d7cf 0.01%, #00c0ff 100.04%),
 #00c0ff;
+$resources-item-width: 150px; // Ширина блока (отдельного ресурса) в секции Ресурсы
 
 %positionCenterX {
   left: 50%;

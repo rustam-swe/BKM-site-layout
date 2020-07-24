@@ -46,7 +46,7 @@
     <main class="main">
       <section class="section banner">
         <div class="home-slider">
-          <article class="home-slider__slide">
+          <article class="home-slider__slide"><img class="home-slider__bg" src="./assets/img/home-slider-bg.jpg">
             <div class="home-slider__container container">
               <div class="home-slider__info">
                 <header class="main-slider__header section__header">
@@ -59,7 +59,7 @@
               </div>
             </div>
           </article>
-          <article class="home-slider__slide">
+          <article class="home-slider__slide"><img class="home-slider__bg" src="./assets/img/home-slider-bg.jpg">
             <div class="home-slider__container container">
               <div class="home-slider__info">
                 <header class="main-slider__header section__header">
@@ -216,14 +216,42 @@
           </div>
         </div>
       </section>
-      <section class="subscribtion section">
-        <div class="container"></div>
-      </section>
-      <section class="resourses section" id="resourses">
-        <div class="container"></div>
+      <section class="resources section" id="resources">
+        <div class="container">
+          <header class="section__header">
+            <h2 class="section__title">Ресурсы</h2>
+          </header>
+          <ul class="resources__list list">
+            <li class="resources__item"><a class="resources__link link" href="#"><img class="resources__img" src="./assets/img/resource--1.png">
+                <div class="resources__title">Официальные документы БКМ</div></a></li>
+            <li class="resources__item"><a class="resources__link link" href="#"><img class="resources__img" src="./assets/img/resource--2.png">
+                <div class="resources__title">БКМ: концепция и практика</div></a></li>
+            <li class="resources__item"><a class="resources__link link" href="#"><img class="resources__img" src="./assets/img/resource--3.png">
+                <div class="resources__title">Материалы по служению на рабочем месте</div></a></li>
+            <li class="resources__item"><a class="resources__link link" href="#"><img class="resources__img" src="./assets/img/resource--4.png">
+                <div class="resources__title">Ресурсы на английском языке</div></a></li>
+          </ul>
+        </div>
       </section>
       <section class="partners section" id="partners">
-        <div class="container"></div>
+        <div class="container">
+          <header class="section__header">
+            <h2 class="section__title">ПАРТНЕРЫ И СПОНСОРЫ<span class="stress_accent-color stress_bold">БКМ-РОССИЯ</span></h2>
+          </header>
+          <ul class="partners__list list">
+            <li class="partners__partner"><a class="partners__thumb" href="./assets/img/partner--1.png" data-fancybox="partners"><img class="partners__thumb" src="./assets/img/partner--1.png" alt=""></a></li>
+            <li class="partners__partner"><a class="partners__thumb" href="./assets/img/partner--2.png" data-fancybox="partners"><img class="partners__thumb" src="./assets/img/partner--2.png" alt=""></a></li>
+            <li class="partners__partner"><a class="partners__thumb" href="./assets/img/partner--3.png" data-fancybox="partners"><img class="partners__thumb" src="./assets/img/partner--3.png" alt=""></a></li>
+            <li class="partners__partner"><a class="partners__thumb" href="./assets/img/partner--4.png" data-fancybox="partners"><img class="partners__thumb" src="./assets/img/partner--4.png" alt=""></a></li>
+            <li class="partners__partner"><a class="partners__thumb" href="./assets/img/partner--5.png" data-fancybox="partners"><img class="partners__thumb" src="./assets/img/partner--5.png" alt=""></a></li>
+            <li class="partners__partner"><a class="partners__thumb" href="./assets/img/partner--5.png" data-fancybox="partners"><img class="partners__thumb" src="./assets/img/partner--5.png" alt=""></a></li>
+          </ul>
+          <div class="partnership-offer">
+            Если вы хотите стать партнером или спонсором,
+            <a class="stress_accent-color stress_bold link" href="#">напишите</a>
+            нам.
+          </div>
+        </div>
       </section>
     </main>
     <footer class="footer">
@@ -231,7 +259,7 @@
         <div class="row">
           <div class="footer__policy footer__col col-12 col-sm-6 col-md-4"><a class="link" href="#">Политика конфеденциальности</a></div>
           <div class="footer__copyright footer__col col-12 col-sm-12 col-md-4">
-            <div class="copyright">Copyright 2019 Медиа Сервис<br>Все права защищен</div>
+            <div class="copyright">© Бизнес Как Миссия. Россия 2019.Все права защищены.<br>Все права защищен</div>
           </div>
           <div class="footer__developer footer__col col-12 col-sm-6 col-md-4">
             Сайт разработан студией
@@ -241,18 +269,6 @@
       </div>
     </footer>
     <div class="light-box"></div>
-    <div class="dialog">
-      <div class="modal-md">
-        <div class="close"></div>
-        <div class="modal-content">
-          <form class="form form__callback">
-            <input class="form__input" type="text" placeholder="Введите свой номер тел.">
-            <input class="form__input" type="text" placeholder="Ваше имя">
-            <button class="form__btn btn" type="submit">Заказать звонок</button>
-          </form>
-        </div>
-      </div>
-    </div>
     <script src="./js/jquery-3.4.1.min.js"></script>
     <script src="./js/slick.min.js"></script>
     <script src="./js/jquery.fancybox.min.js"></script>

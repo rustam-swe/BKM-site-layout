@@ -16,6 +16,7 @@ html(lang="ru")
       section.section.banner
         .home-slider
           article.home-slider__slide
+            img.home-slider__bg(src="./assets/img/home-slider-bg.jpg")
             .home-slider__container.container
               .home-slider__info
                 header.main-slider__header.section__header
@@ -28,6 +29,7 @@ html(lang="ru")
                   .author__position руководитель рабочей группы Бизнес как миссия при Лозаннском движении
 
           article.home-slider__slide
+            img.home-slider__bg(src="./assets/img/home-slider-bg.jpg")
             .home-slider__container.container
               .home-slider__info
                 header.main-slider__header.section__header
@@ -172,7 +174,8 @@ html(lang="ru")
                 h2.news__title Экономическом Бизнес должен
                 .news__description способствовать росту экономики на той территории, где он действует.
               a.news__link.btn.link Подробнее
-      
+          
+          //- СЕКЦИЯ: Форма подписки
           .subscription.subscription_horizontal
             .subscription__cta-text Подпишитесь на нашу рассылку и сможете получать новости самыми первыми
             form.subscription__form
@@ -180,17 +183,62 @@ html(lang="ru")
               button.subscription__btn.btn.btn_alt(type="submit") подписатьтся
             .subscription__privacy-policy-text Нажимая на кнопку, вы даете согласие на обработку персональных данных и соглашаетесь c политикой конфиденциальности.
 
-      //- СЕКЦИЯ: Форма подписки
-      section.subscribtion.section
-        .container
-
       //- СЕКЦИЯ: Ресурсы
-      section#resourses.resourses.section
+      section#resources.resources.section
         .container
+          header.section__header
+            h2.section__title Ресурсы
+          ul.resources__list.list
+            li.resources__item
+              a.resources__link.link(href="#")
+                img.resources__img(src="./assets/img/resource--1.png")
+                .resources__title Официальные документы БКМ
+            li.resources__item
+              a.resources__link.link(href="#")
+                img.resources__img(src="./assets/img/resource--2.png")
+                .resources__title БКМ: концепция и практика
+            li.resources__item
+              a.resources__link.link(href="#")
+                img.resources__img(src="./assets/img/resource--3.png")
+                .resources__title Материалы по служению на рабочем месте
+            li.resources__item
+              a.resources__link.link(href="#")
+                img.resources__img(src="./assets/img/resource--4.png")
+                .resources__title Ресурсы на английском языке
 
       //- СЕКЦИЯ: Партнеры и спонсоры
       section#partners.partners.section
         .container
-
+          header.section__header
+            h2.section__title
+              | ПАРТНЕРЫ И СПОНСОРЫ
+              span.stress_accent-color.stress_bold БКМ-РОССИЯ
+          
+          ul.partners__list.list
+            li.partners__partner
+              a.partners__thumb(href="./assets/img/partner--1.png" data-fancybox="partners")
+                img.partners__thumb(src="./assets/img/partner--1.png", alt="")
+            li.partners__partner
+              a.partners__thumb(href="./assets/img/partner--2.png" data-fancybox="partners")
+                img.partners__thumb(src="./assets/img/partner--2.png", alt="")
+            li.partners__partner
+              a.partners__thumb(href="./assets/img/partner--3.png" data-fancybox="partners")
+                img.partners__thumb(src="./assets/img/partner--3.png", alt="")
+            li.partners__partner
+              a.partners__thumb(href="./assets/img/partner--4.png" data-fancybox="partners")
+                img.partners__thumb(src="./assets/img/partner--4.png", alt="")
+            li.partners__partner
+              a.partners__thumb(href="./assets/img/partner--5.png" data-fancybox="partners")
+                img.partners__thumb(src="./assets/img/partner--5.png", alt="")
+            li.partners__partner
+              a.partners__thumb(href="./assets/img/partner--5.png" data-fancybox="partners")
+                img.partners__thumb(src="./assets/img/partner--5.png", alt="")
+          
+          .partnership-offer
+            | Если вы хотите стать партнером или спонсором,
+            |
+            a.stress_accent-color.stress_bold.link(href="#") напишите
+            |
+            | нам.
     //- ФУТЕР
     include _footer.pug    
